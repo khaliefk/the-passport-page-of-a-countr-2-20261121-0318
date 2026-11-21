@@ -797,6 +797,10 @@ function drawSpread(): void {
   // Page edges.
   roundedRect(36, 30, 462, 660, 4, PAGE_EDGE, 1, false);
   roundedRect(526, 30, 462, 660, 4, PAGE_EDGE, 1, false);
+  // A fine gold inner frame on each page, the printed border a real
+  // passport page carries inside its edge.
+  roundedRect(43, 37, 448, 646, 2, GOLD, 0.55, false);
+  roundedRect(533, 37, 448, 646, 2, GOLD, 0.55, false);
   // Gutter shading where the pages meet.
   fillRect(492, 30, 6, 660, [0, 0, 0], 0.08);
   fillRect(526, 30, 6, 660, [0, 0, 0], 0.08);
